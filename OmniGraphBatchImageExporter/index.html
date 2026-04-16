@@ -315,10 +315,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-does" class="md-nav__link">
+  <a href="#value-proposition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it does
+        Value Proposition
       
     </span>
   </a>
@@ -326,10 +326,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#highlights" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Highlights
+        Key Features
       
     </span>
   </a>
@@ -337,21 +337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#quick-start-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why use it
+        Quick Start Workflow
       
     </span>
   </a>
@@ -420,10 +409,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#what-it-does" class="md-nav__link">
+  <a href="#value-proposition" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What it does
+        Value Proposition
       
     </span>
   </a>
@@ -431,10 +420,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#highlights" class="md-nav__link">
+  <a href="#key-features" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Highlights
+        Key Features
       
     </span>
   </a>
@@ -442,21 +431,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
+  <a href="#quick-start-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#why-use-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why use it
+        Quick Start Workflow
       
     </span>
   </a>
@@ -481,39 +459,34 @@
 
 
 <h1 id="omnigraph">OmniGraph</h1>
-<p><code>OmniGraph</code> is an Unreal Engine 5 editor plugin for exporting high-quality PNG images from graph-based assets without relying on viewport screenshots.</p>
-<p>It is designed for documentation, reviews, tutorials, changelogs, and any workflow where you need clean captures of Unreal graph content that can be shared outside the editor.</p>
-<h2 id="what-it-does">What it does</h2>
+<p><code>OmniGraph</code> helps Unreal teams generate clean, high-resolution graph images for documentation, tutorials, reviews, and internal knowledge bases without viewport clutter.</p>
+<p>Instead of manual screenshot workflows, OmniGraph captures graph content directly from editor graph widgets, producing consistent output that is ready for professional documentation.</p>
+<h2 id="value-proposition">Value Proposition</h2>
 <ul>
-<li>Exports graph images as PNG files.</li>
-<li>Works from Unreal Editor tooling instead of external screen capture workflows.</li>
-<li>Supports Blueprint-oriented editor workflows with batch export in mind.</li>
-<li>Keeps output suitable for polished documentation and team communication.</li>
+<li>Capture graph visuals at documentation quality with consistent framing.</li>
+<li>Avoid editor viewport noise and ad hoc screenshot cleanup.</li>
+<li>Standardize deliverables across technical artists, designers, and engineers.</li>
+<li>Scale from one-off exports to repeatable batch documentation workflows.</li>
 </ul>
+<h2 id="key-features">Key Features</h2>
+<ul>
+<li><strong>Batch processing</strong>: Export multiple supported assets in a single run.</li>
+<li><strong>High-resolution support</strong>: Tune capture scale and limits for publication-ready outputs.</li>
+<li><strong>Clean presentation controls</strong>: Configure background/grid behavior for clearer results in docs.</li>
+<li><strong>Editor integration</strong>: Launch exports from the Content Browser and manage defaults in plugin settings.</li>
+</ul>
+<h2 id="quick-start-workflow">Quick Start Workflow</h2>
+<ol>
+<li>Enable <code>OmniGraph</code> in Unreal Editor.</li>
+<li>Open <strong>Project Settings -&gt; Plugins -&gt; OmniGraph</strong> and configure output defaults.</li>
+<li>Select supported assets in the Content Browser.</li>
+<li>Right-click and run the graph export action.</li>
+<li>Use the generated PNG files in Marketplace/Fab pages, manuals, and release notes.</li>
+</ol>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>This documentation lives inside the plugin folder so the docs setup stays isolated from the rest of the repository.</p>
+<p>OmniGraph is designed for teams that need reliable graph visuals for external-facing documentation and internal production references.</p>
 </div>
-<h2 id="highlights">Highlights</h2>
-<ul>
-<li>Editor-only plugin architecture for Unreal Engine 5.</li>
-<li>Source-compatible support starting at UE <code>5.0.0</code>.</li>
-<li>Built for graph capture workflows where readability matters.</li>
-<li>Intended for professional documentation and asset review pipelines.</li>
-</ul>
-<h2 id="example">Example</h2>
-<p>The plugin is implemented as native Unreal Engine modules. A typical module declaration looks like this:</p>
-<div class="codehilite"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FBlueprintImageExporterModule</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="k">public</span><span class="w"> </span><span class="n">IModuleInterface</span>
-<span class="p">{</span>
-<span class="k">public</span><span class="o">:</span>
-<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">StartupModule</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
-<span class="w">    </span><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ShutdownModule</span><span class="p">()</span><span class="w"> </span><span class="k">override</span><span class="p">;</span>
-<span class="p">};</span>
-</code></pre></div>
-
-<h2 id="why-use-it">Why use it</h2>
-<p>If your team needs to publish Blueprint-related visuals to internal docs, release notes, or public knowledge bases, this plugin helps you produce repeatable image output that is easier to maintain than manual screenshots.</p>
-<p>Continue to the setup guide for installation and local documentation workflow details.</p>
 
 
 

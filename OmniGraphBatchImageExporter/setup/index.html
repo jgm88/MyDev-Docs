@@ -342,10 +342,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-plugin" class="md-nav__link">
+  <a href="#enable-omnigraph" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the plugin
+        Enable OmniGraph
       
     </span>
   </a>
@@ -353,10 +353,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-usage" class="md-nav__link">
+  <a href="#find-the-tool-in-unreal-editor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic usage
+        Find the tool in Unreal Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-configuration-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial configuration checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow summary
       
     </span>
   </a>
@@ -420,10 +442,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#install-the-plugin" class="md-nav__link">
+  <a href="#enable-omnigraph" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Install the plugin
+        Enable OmniGraph
       
     </span>
   </a>
@@ -431,10 +453,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#basic-usage" class="md-nav__link">
+  <a href="#find-the-tool-in-unreal-editor" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Basic usage
+        Find the tool in Unreal Editor
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-configuration-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial configuration checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workflow-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Workflow summary
       
     </span>
   </a>
@@ -481,24 +525,48 @@
 
 
 <h1 id="setup">Setup</h1>
-<p>This guide covers both plugin installation in Unreal Engine and local documentation generation with MkDocs Material.</p>
-<h2 id="install-the-plugin">Install the plugin</h2>
+<p>This guide covers enabling OmniGraph, finding the export workflow in Unreal Editor, and applying initial configuration for consistent results.</p>
+<div class="admonition info">
+<p class="admonition-title">Technical Requirements</p>
+<ul>
+<li>Unreal Engine <code>5.0.0</code> or newer.</li>
+<li>Editor workflow only (not intended for runtime/gameplay use).</li>
+<li>Project-level access to <code>Project Settings -&gt; Plugins -&gt; OmniGraph</code>.</li>
+</ul>
+</div>
+<h2 id="enable-omnigraph">Enable OmniGraph</h2>
 <ol>
 <li>Place the plugin under your project at <code>Plugins/OmniGraph</code>.</li>
 <li>Open the Unreal project in the editor.</li>
-<li>Enable the plugin from <strong>Edit -&gt; Plugins</strong> if it is not already enabled.</li>
+<li>Go to <strong>Edit -&gt; Plugins</strong> and search for <strong>OmniGraph</strong>.</li>
+<li>Enable the plugin if it is not already active.</li>
 <li>Restart the editor when prompted.</li>
 </ol>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The plugin is editor-only. It is intended for authoring and export workflows inside Unreal Editor, not runtime packaging.</p>
+<p>OmniGraph is designed for editor-based content capture and documentation workflows.</p>
 </div>
-<h2 id="basic-usage">Basic usage</h2>
+<h2 id="find-the-tool-in-unreal-editor">Find the tool in Unreal Editor</h2>
 <ol>
-<li>Open <strong>Project Settings -&gt; Plugins -&gt; OmniGraph</strong>.</li>
-<li>Configure export preferences such as output folder, padding, and background behavior.</li>
-<li>In the Content Browser, right-click supported assets and choose the export action.</li>
-<li>Select an output location for the generated PNG files.</li>
+<li>Open <strong>Project Settings -&gt; Plugins -&gt; OmniGraph</strong> to configure defaults.</li>
+<li>In the Content Browser, select one or more supported graph assets.</li>
+<li>Right-click the selection and run the graph export action.</li>
+<li>Choose the output destination for generated PNG files.</li>
+</ol>
+<h2 id="initial-configuration-checklist">Initial configuration checklist</h2>
+<p>Before your first production export, configure:</p>
+<ol>
+<li>Default output directory.</li>
+<li>Resolution scale and dimension limits for target documentation quality.</li>
+<li>Bounds/padding for consistent framing.</li>
+<li>Background/grid behavior to match your documentation style.</li>
+</ol>
+<h2 id="workflow-summary">Workflow summary</h2>
+<ol>
+<li>Configure defaults once in plugin settings.</li>
+<li>Select assets in the Content Browser.</li>
+<li>Launch export from the right-click menu.</li>
+<li>Reuse outputs in Marketplace/Fab pages, manuals, and team documentation.</li>
 </ol>
 <h2 id="build-the-documentation-locally">Build the documentation locally</h2>
 <p>The documentation source is stored inside the plugin folder so it can travel with the plugin.</p>
