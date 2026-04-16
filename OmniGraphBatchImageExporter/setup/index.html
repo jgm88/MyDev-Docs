@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Professional documentation for the Blueprint Image Exporter UE5 plugin.">
+        <meta name="description" content="Professional documentation for the OmniGraph UE5 plugin.">
       
       
       
@@ -25,7 +25,7 @@
     
     
       
-        <title>Installation - Blueprint Image Exporter Docs</title>
+        <title>Installation - OmniGraph Docs</title>
       
     
     
@@ -88,7 +88,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Blueprint Image Exporter Docs" class="md-header__button md-logo" aria-label="Blueprint Image Exporter Docs" data-md-component="logo">
+    <a href=".." title="OmniGraph Docs" class="md-header__button md-logo" aria-label="OmniGraph Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -102,7 +102,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Blueprint Image Exporter Docs
+            OmniGraph Docs
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -237,13 +237,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Blueprint Image Exporter Docs" class="md-nav__button md-logo" aria-label="Blueprint Image Exporter Docs" data-md-component="logo">
+    <a href=".." title="OmniGraph Docs" class="md-nav__button md-logo" aria-label="OmniGraph Docs" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Blueprint Image Exporter Docs
+    OmniGraph Docs
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -484,7 +484,7 @@
 <p>This guide covers both plugin installation in Unreal Engine and local documentation generation with MkDocs Material.</p>
 <h2 id="install-the-plugin">Install the plugin</h2>
 <ol>
-<li>Place the plugin under your project at <code>Plugins/BlueprintImageExporter</code>.</li>
+<li>Place the plugin under your project at <code>Plugins/OmniGraph</code>.</li>
 <li>Open the Unreal project in the editor.</li>
 <li>Enable the plugin from <strong>Edit -&gt; Plugins</strong> if it is not already enabled.</li>
 <li>Restart the editor when prompted.</li>
@@ -495,20 +495,20 @@
 </div>
 <h2 id="basic-usage">Basic usage</h2>
 <ol>
-<li>Open <strong>Project Settings -&gt; Plugins -&gt; Blueprint Image Exporter</strong>.</li>
+<li>Open <strong>Project Settings -&gt; Plugins -&gt; OmniGraph</strong>.</li>
 <li>Configure export preferences such as output folder, padding, and background behavior.</li>
 <li>In the Content Browser, right-click supported assets and choose the export action.</li>
 <li>Select an output location for the generated PNG files.</li>
 </ol>
 <h2 id="build-the-documentation-locally">Build the documentation locally</h2>
 <p>The documentation source is stored inside the plugin folder so it can travel with the plugin.</p>
-<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Plugins/BlueprintImageExporter
+<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Plugins/OmniGraph
 python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
 python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
 mkdocs<span class="w"> </span>build
 </code></pre></div>
 
-<p>After the build finishes, the generated static site is available in <code>Plugins/BlueprintImageExporter/site</code>.</p>
+<p>After the build finishes, the generated static site is available in <code>Plugins/OmniGraph/site</code>.</p>
 <h2 id="publish-flow">Publish flow</h2>
 <p>The repository workflow builds docs from inside the plugin folder and pushes only the generated HTML output to the public docs repository.</p>
 <p>That means:</p>
