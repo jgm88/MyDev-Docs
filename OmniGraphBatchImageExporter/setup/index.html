@@ -385,28 +385,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#build-the-documentation-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build the documentation locally
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publish-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Publish flow
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -485,28 +463,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#build-the-documentation-locally" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Build the documentation locally
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#publish-flow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Publish flow
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -568,23 +524,6 @@
 <li>Launch export from the right-click menu.</li>
 <li>Reuse outputs in Marketplace/Fab pages, manuals, and team documentation.</li>
 </ol>
-<h2 id="build-the-documentation-locally">Build the documentation locally</h2>
-<p>The documentation source is stored inside the plugin folder so it can travel with the plugin.</p>
-<div class="codehilite"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>Plugins/OmniGraph
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>--upgrade<span class="w"> </span>pip
-python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
-mkdocs<span class="w"> </span>build
-</code></pre></div>
-
-<p>After the build finishes, the generated static site is available in <code>Plugins/OmniGraph/site</code>.</p>
-<h2 id="publish-flow">Publish flow</h2>
-<p>The repository workflow builds docs from inside the plugin folder and pushes only the generated HTML output to the public docs repository.</p>
-<p>That means:</p>
-<ul>
-<li>The private plugin source stays in this repository.</li>
-<li>The public repo receives only the built site contents.</li>
-<li>Raw markdown files from <code>docs/</code> are not deployed.</li>
-</ul>
 
 
 
