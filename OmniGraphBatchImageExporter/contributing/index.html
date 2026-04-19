@@ -10,13 +10,11 @@
       
       
       
-        <link rel="canonical" href="https://jgm88.github.io/MyDev-Docs/OmniGraphBatchImageExporter/setup/">
+        <link rel="canonical" href="https://jgm88.github.io/MyDev-Docs/OmniGraphBatchImageExporter/contributing/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../setup/">
       
-      
-        <link rel="next" href="../contributing/">
       
       
         
@@ -27,7 +25,7 @@
     
     
       
-        <title>Installation - OmniGraph Docs</title>
+        <title>Contributing - OmniGraph Docs</title>
       
     
     
@@ -76,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup" class="md-skip">
+        <a href="#contributing-and-repository-layout" class="md-skip">
           Skip to content
         </a>
       
@@ -110,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation
+              Contributing
             
           </span>
         </div>
@@ -200,11 +198,9 @@
   
   
   
-    
   
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="./" class="md-tabs__link">
+    <li class="md-tabs__item">
+      <a href="../setup/" class="md-tabs__link">
         
   
   
@@ -221,9 +217,11 @@
   
   
   
+    
   
-    <li class="md-tabs__item">
-      <a href="../contributing/" class="md-tabs__link">
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
         
   
   
@@ -300,6 +298,33 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -319,7 +344,7 @@
   <span class="md-ellipsis">
     
   
-    Installation
+    Contributing
   
 
     
@@ -337,7 +362,7 @@
   <span class="md-ellipsis">
     
   
-    Installation
+    Contributing
   
 
     
@@ -363,10 +388,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enable-omnigraph" class="md-nav__link">
+  <a href="#supported-engines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Enable OmniGraph
+        Supported engines
       
     </span>
   </a>
@@ -374,10 +399,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-the-tool-in-unreal-editor" class="md-nav__link">
+  <a href="#architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Find the tool in Unreal Editor
+        Architecture
       
     </span>
   </a>
@@ -385,10 +410,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#initial-configuration-checklist" class="md-nav__link">
+  <a href="#local-development" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initial configuration checklist
+        Local development
       
     </span>
   </a>
@@ -396,10 +421,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workflow-summary" class="md-nav__link">
+  <a href="#usage-reminder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Workflow summary
+        Usage (reminder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -410,33 +446,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../contributing/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Contributing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -468,10 +477,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enable-omnigraph" class="md-nav__link">
+  <a href="#supported-engines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Enable OmniGraph
+        Supported engines
       
     </span>
   </a>
@@ -479,10 +488,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#find-the-tool-in-unreal-editor" class="md-nav__link">
+  <a href="#architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Find the tool in Unreal Editor
+        Architecture
       
     </span>
   </a>
@@ -490,10 +499,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#initial-configuration-checklist" class="md-nav__link">
+  <a href="#local-development" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Initial configuration checklist
+        Local development
       
     </span>
   </a>
@@ -501,10 +510,21 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#workflow-summary" class="md-nav__link">
+  <a href="#usage-reminder" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Workflow summary
+        Usage (reminder)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Notes
       
     </span>
   </a>
@@ -528,50 +548,48 @@
 
 
 
-<h1 id="setup">Setup</h1>
-<p>This guide covers enabling OmniGraph, finding the export workflow in Unreal Editor, and applying initial configuration for consistent results.</p>
-<div class="admonition info">
-<p class="admonition-title">Technical Requirements</p>
+<h1 id="contributing-and-repository-layout">Contributing and repository layout</h1>
+<p>This repository ships <strong>one plugin tree per Unreal minor version</strong> under <code>Plugins/OmniGraph_UE_&lt;major&gt;.&lt;minor&gt;/OmniGraph/</code>. Each tree has its own <code>OmniGraph.uplugin</code> with a matching <code>EngineVersion</code> (for example <code>5.5.0</code> for UE 5.5).</p>
+<h2 id="supported-engines">Supported engines</h2>
+<p>Pick the folder that matches the engine you build against. Differences between UE minors are isolated in <code>BlueprintImageExporterEngineCompat.h</code>, <code>BlueprintImageExporterCoreEngineCompat.h</code>, and related sources inside that tree.</p>
+<p>The <code>.uplugin</code> lists <strong>EditorScriptingUtilities</strong>, <strong>Niagara</strong>, <strong>RigVM</strong>, <strong>ControlRig</strong>, and <strong>Metasound</strong> so plugin load order matches <code>BlueprintImageExporterCore.Build.cs</code> and <code>BlueprintImageExporter.Build.cs</code> module dependencies.</p>
+<h2 id="architecture">Architecture</h2>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BlueprintImageExporterCore</strong></td>
+<td>Graph enumeration (<code>UbergraphPages</code>, <code>FunctionGraphs</code>, <code>MacroGraphs</code>), Slate capture, <code>IImageWriteQueue</code> PNG writes, <code>UBlueprintImageExporterSettings</code>.</td>
+</tr>
+<tr>
+<td><strong>BlueprintImageExporter</strong></td>
+<td>Toolbar tab, <strong>Project Settings</strong> (<code>Plugins → OmniGraph</code>), Content Browser context menu.</td>
+</tr>
+</tbody>
+</table>
+<p>Editor resolution is centralized in <strong><code>FBlueprintImageExporterEditorLocator</code></strong> so engine changes to asset editors can be adapted in one place.</p>
+<h2 id="local-development">Local development</h2>
 <ul>
-<li>Unreal Engine <strong>5.0</strong> through <strong>5.7</strong> (use the plugin build whose <code>EngineVersion</code> matches your editor minor).</li>
-<li>Editor workflow only (not intended for runtime/gameplay use).</li>
-<li>Project-level access to <code>Project Settings -&gt; Plugins -&gt; OmniGraph</code>.</li>
+<li>Use <code>Tools/New-OmniGraphHarness.ps1</code> in the repository root to create minimal harness projects under <code>Unreal Projects</code> with a junction from <code>Plugins/OmniGraph</code> into the matching versioned tree in this repo.</li>
+<li>Use <code>Tools/Build-OmniGraphAll.ps1</code> to run <code>BuildPlugin</code> for each installed engine and produce Fab-ready zip archives.</li>
 </ul>
-</div>
-<h2 id="enable-omnigraph">Enable OmniGraph</h2>
+<h2 id="usage-reminder">Usage (reminder)</h2>
 <ol>
-<li>Copy the version-matched plugin folder from this repository into your project at <code>Plugins/OmniGraph</code> (for example, use the <code>OmniGraph</code> subtree from <code>Plugins/OmniGraph_UE_5.5/OmniGraph</code> when targeting UE 5.5).</li>
-<li>Open the Unreal project in the editor.</li>
-<li>Go to <strong>Edit -&gt; Plugins</strong> and search for <strong>OmniGraph</strong>.</li>
-<li>Enable the plugin if it is not already active.</li>
-<li>Restart the editor when prompted.</li>
+<li><strong>Edit → Plugins</strong>: enable <strong>OmniGraph</strong> (and dependency <strong>Editor Scripting Utilities</strong> if needed).</li>
+<li><strong>Project Settings → Plugins → OmniGraph</strong>: resolution scale, bounds padding, grid/solid background, default export folder, filename pattern (<code>{Asset}</code>, <code>{Graph}</code>).</li>
+<li><strong>Content Browser</strong>: right-click one or more <strong>Blueprint</strong> assets → <strong>Export Blueprint Graphs to PNG...</strong> and pick a folder.</li>
+<li>Optional: main editor toolbar button opens the settings tab.</li>
 </ol>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>OmniGraph is designed for editor-based content capture and documentation workflows.</p>
-</div>
-<h2 id="find-the-tool-in-unreal-editor">Find the tool in Unreal Editor</h2>
-<ol>
-<li>Open <strong>Project Settings -&gt; Plugins -&gt; OmniGraph</strong> to configure defaults.</li>
-<li>In the Content Browser, select one or more supported graph assets.</li>
-<li>Right-click the selection and run the graph export action.</li>
-<li>Choose the output destination for generated PNG files.</li>
-</ol>
-<h2 id="initial-configuration-checklist">Initial configuration checklist</h2>
-<p>Before your first production export, configure:</p>
-<ol>
-<li>Default output directory.</li>
-<li>Resolution scale and dimension limits for target documentation quality.</li>
-<li>Bounds/padding for consistent framing.</li>
-<li>Background/grid behavior to match your documentation style.</li>
-</ol>
-<h2 id="workflow-summary">Workflow summary</h2>
-<ol>
-<li>Configure defaults once in plugin settings.</li>
-<li>Select assets in the Content Browser.</li>
-<li>Launch export from the right-click menu.</li>
-<li>Reuse outputs in Marketplace/Fab pages, manuals, and team documentation.</li>
-</ol>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Export opens or reuses the Blueprint editor and drives <strong><code>SGraphEditor</code> / <code>SGraphPanel</code></strong> (zoom, bounds, <code>JumpToRect</code>) before rasterizing.</li>
+<li><strong>Hide grid</strong>: when disabled in settings, the capture temporarily swaps <code>UEditorStyleSettings::GraphBackgroundBrush</code> to a solid tint (restored after the scoped capture path).</li>
+</ul>
 
 
 
